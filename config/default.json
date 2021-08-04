@@ -1,0 +1,3 @@
+{
+    "mongoURI" : "mongodb+srv://jdbooth9516:hitokiri1@webdev.abe3j.mongodb.net/MERNexample?retryWrites=true&w=majority"
+}
