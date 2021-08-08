@@ -15,3 +15,24 @@ Content-Type:  application/json
 
 GET http://localhost:5000/api/auth HTTP/1.1
 x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEwY2E5ZThmMTFmMTgzNTAwY2MzNjI1In0sImlhdCI6MTYyODIxOTg4MCwiZXhwIjoxNjI4NTc5ODgwfQ.jeR5Ld0BGOdhsyc_q3l61VMsuuF8QKYBSQUibGDxZaE
+
+
+### test login 
+// login to get the token.
+POST http://localhost:5000/api/auth HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "jde@gmail.com",
+    "password" : "password"
+}
+
+### test get profile 
+
+GET http://localhost:5000/api/profile/me HTTP/1.1
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEwY2E5ZThmMTFmMTgzNTAwY2MzNjI1In0sImlhdCI6MTYyODMwMTU1NCwiZXhwIjoxNjI4NjYxNTU0fQ.Rrri5TquNF-Au1HkEtfGy6sfdo_PEuNu1wYCF2Amoqk
+
+### post a new profile to the data base.
+
+POST http://localhost:5000/api/profile HTTP/1.1
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEwY2E5ZThmMTFmMTgzNTAwY2MzNjI1In0sImlhdCI6MTYyODMwMTU1NCwiZXhwIjoxNjI4NjYxNTU0fQ.Rrri5TquNF-Au1HkEtfGy6sfdo_PEuNu1wYCF2Amoqk
