@@ -36,3 +36,15 @@ x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEwY2E5Z
 
 POST http://localhost:5000/api/profile HTTP/1.1
 x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEwY2E5ZThmMTFmMTgzNTAwY2MzNjI1In0sImlhdCI6MTYyODMwMTU1NCwiZXhwIjoxNjI4NjYxNTU0fQ.Rrri5TquNF-Au1HkEtfGy6sfdo_PEuNu1wYCF2Amoqk
+Content-Type: application/json
+
+{
+    "company": "my Own",
+    "status": "Developer",
+    "website": "https://www.mysite.com",
+    "skills": "HTML, CSS, React, Python",
+    "location": "Phoenix, Az",
+    "bio": "I am me",
+    "githubusername": "jdbooth9516",
+    "facebook": "https//facebook.com/traversymedia"
+}
