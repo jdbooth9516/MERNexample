@@ -108,4 +108,18 @@ router.post(
   }
 );
 
+// Route: GET api/profile/
+//DESC: Get all profiles
+//ACCESS: Public
+
+router.get('/', async (req, res) => {
+  try {
+    // the .find() will find all the profiles .popluate will fo in to the
+    const profiles = await Profile.find().populate('user', ['name', 'avatar']);
+    res.json(profiles);
+  } catch (error) {
+    console.error(error.message);
+    res.status(500).send('Server Error');
+  }
+});
 module.exports = router;

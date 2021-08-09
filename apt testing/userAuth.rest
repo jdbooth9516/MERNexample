@@ -48,3 +48,7 @@ Content-Type: application/json
     "githubusername": "jdbooth9516",
     "facebook": "https//facebook.com/traversymedia"
 }
+
+
+### get all profiles
+GET http://localhost:5000/api/profile HTTP/1.1
